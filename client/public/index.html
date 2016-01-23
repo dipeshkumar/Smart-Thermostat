@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Web Interface</title>
+
+		<link href="css/bootstrap.css" rel="stylesheet">
+		
+		
+
+	</head>
+
+	<body>
+		
+	</body>
+
+	<script type="text/javascript" src="conf/acl.js"></script>
+	<script type="text/javascript" src="js/lib/template.js"></script>
+	<script type="text/javascript" src="js/lib/acl.js"></script>
+
+	<script type="text/javascript" src="js/lib/websocket.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.js"></script>
+
+	<script type="text/javascript">
+		template.load(getCurrentPage());
+	</script>
+	<script type="text/javascript">
+		document.onload = function() {
+			document.body.appendChild(template.createScript('interface'));
+		}
+	</script>
+	
+</html>

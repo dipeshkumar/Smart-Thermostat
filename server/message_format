@@ -1,0 +1,25 @@
+//These are what interface will give you
+
+setMessage = {
+        "origin":"interface",
+        "destination":"server",
+        "data":{
+            "appliance":"lamp",
+            "cmd":"on"
+        }
+    }
+
+
+
+//And this is what hardware give
+
+var jMessage = {
+        "origin":"johnyFive",
+        "destination":"server",
+        "data":{
+            "temperature":27,
+            "humidity":10
+        }
+    }
+
+
